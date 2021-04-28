@@ -1,6 +1,6 @@
-# <div align="center">Webinar Task Manager BackEnd</div>
+# <div align="center">Webinar Pasarela de Pagos BackEnd</div>
 
-Bienvenido a mi repositorio 📂️ donde podrás encontrar el codigo del webinar de **Task Manager con Sockets** 🤓️
+Bienvenido a mi repositorio 📂️ donde podrás encontrar el codigo del webinar de **Pasarela de Pagos con Sockets** 🤓️
 
 Para comenzar es muy sencillo solamente sigue los siguientes pasos de instalación y podrás ejecutar el proyecto en tu máquina 💻️! 🤩️🤩️
 
@@ -13,23 +13,22 @@ Una vez que tengas NodeJs instalado, para comprobar corre el siguiente comando e
 $ node --version
 ```
 
-Ahora descarga el repositorio y luego instala las _dependencies_ (o librerias 📚) de la siguiente manera dentro de la carpeta del repositorio: 🤓️
+Ahora descarga el repositorio y luego instala las _dependencies_ (o librerias 📚) de la siguiente manera dentro de la carpeta del repositorio (Nota: Puedes hacerlo con npm pero yarn es mas veloz 🚀): 🤓️
 
 ```
-$ npm install
+$ npm install --global yarn
+$ yarn
 ```
 
 Esto creará una carpeta con el nombre _node_modules_ y ahí se instalarán todas las librerias necesarias de nuestro proyecto.
 
 Luego abramos una terminal (o podemos usar la que ya teníamos anteriormente) y nos ubicamos dentro de la carpeta descargada y procederemos a levantar el proyecto 🚀
 
-
 ```
-$ npm start
+$ yarn start:dev
 ```
 
 Ya estámos! Ya podemos levantar nuestro proyecto, no necesitas preocuparte de las bases de datos 🗄️ ya que estamos usando [SQLITE](https://www.sqlite.org/index.html) que es una base de datos muy ligera.
-
 
 ## Extras
 
@@ -40,4 +39,3 @@ Si quieres visualizar los datos que se han almacenado en la base de datos, te re
 [MIT](https://opensource.org/licenses/MIT)
 
 **Software Libre, Hell Yeah!🤙️🤙️**
-
