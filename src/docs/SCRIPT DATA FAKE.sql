@@ -1,0 +1,18 @@
+INSERT INTO `prueba`.`t_categoria` (`categoria_nom`, `createdAt`, `updatedAt`) VALUES ('Entradas', '2021-04-27 10:00', '2021-04-27 10:00');
+INSERT INTO `prueba`.`t_categoria` (`categoria_nom`, `createdAt`, `updatedAt`) VALUES ('Platos de fondo', '2021-04-27 10:00', '2021-04-27 10:00');
+INSERT INTO `prueba`.`t_usuario` (`usu_email`, `usu_nom`, `usu_ape`, `usu_tipo`, `usu_hash`, `usu_salt`, `createdAt`, `updatedAt`) VALUES ('ederiveroman@gmail.com', 'Eduardo', 'de Rivero', 'ADMIN', '35b39a0fd23606ae14d857751344fe7bd90dd500639640a3d313236d7a05ecb3465ac0ffb186ae7c6bd489b65f38776847958f068b25006a4da29be5c44ac4e6', 'fd1c96a387290e36359887c9609498bc', '2021-04-27 23:28:48', '2021-04-27 23:28:48');
+INSERT INTO `prueba`.`t_plato` (`plato_nom`, `plato_img`, `plato_pre`, `createdAt`, `updatedAt`, `categoria_id`) VALUES ('Escribano', ' ', '17.20', '2021-04-27 10:00', '2021-04-27 10:00', '1');
+INSERT INTO `prueba`.`t_plato` (`plato_nom`, `plato_img`, `plato_pre`, `createdAt`, `updatedAt`, `categoria_id`) VALUES ('Soltero de queso', ' ', '14.20', '2021-04-27 10:00', '2021-04-27 10:00', '1');
+INSERT INTO `prueba`.`t_plato` (`plato_nom`, `plato_img`, `plato_pre`, `createdAt`, `updatedAt`, `categoria_id`) VALUES ('Estofado de Res', ' ', '25.80', '2021-04-27 10:00', '2021-04-27 10:00', '2');
+INSERT INTO `prueba`.`t_plato` (`plato_nom`, `plato_img`, `plato_pre`, `createdAt`, `updatedAt`, `categoria_id`) VALUES ('Caja china', ' ', '32.00', '2021-04-27 10:00', '2021-04-27 10:00', '2');
+INSERT INTO `prueba`.`t_mesa` (`mesa_nro`, `mesa_cap`, `createdAt`, `updatedAt`) VALUES ('1', '4', '2021-04-27 10:00', '2021-04-27 10:00');
+INSERT INTO `prueba`.`t_mesa` (`mesa_nro`, `mesa_cap`, `createdAt`, `updatedAt`) VALUES ('2', '2', '2021-04-27 10:00', '2021-04-27 10:00');
+INSERT INTO `prueba`.`t_mesa` (`mesa_nro`, `mesa_cap`, `createdAt`, `updatedAt`) VALUES ('3', '7', '2021-04-27 10:00', '2021-04-27 10:00');
+INSERT INTO `prueba`.`t_mesa` (`mesa_nro`, `mesa_cap`, `createdAt`, `updatedAt`) VALUES ('4', '2', '2021-04-27 10:00', '2021-04-27 10:00');
+INSERT INTO `prueba`.`t_pedido` (`pedido_fech`, `pedido_nro`, `pedido_est`, `createdAt`, `updatedAt`, `usu_id`, `mesa_id`) VALUES ('2021-04-27 10:00', '1', '1', '2021-04-27 10:00', '2021-04-27 10:00', '1', '1');
+INSERT INTO `prueba`.`t_pedido` (`pedido_fech`, `pedido_nro`, `pedido_est`, `createdAt`, `updatedAt`, `usu_id`, `mesa_id`) VALUES ('2021-04-27 10:00', '2', '1', '2021-04-27 10:00', '2021-04-27 10:00', '1', '2');
+INSERT INTO `prueba`.`t_pedido` (`pedido_fech`, `pedido_nro`, `pedido_est`, `createdAt`, `updatedAt`, `usu_id`, `mesa_id`) VALUES ('2021-04-27 10:00', '3', '1', '2021-04-27 10:00', '2021-04-27 10:00', '1', '3');
+INSERT INTO `prueba`.`t_pedidoplato` (`pedidoplato_cant`, `createdAt`, `updatedAt`, `plato_id`, `pedido_id`) VALUES ('2', '2021-04-27 10:00:00', '2021-04-27 10:00:00', '1', '1');
+INSERT INTO `prueba`.`t_pedidoplato` (`pedidoplato_cant`, `createdAt`, `updatedAt`, `plato_id`, `pedido_id`) VALUES ('1', '2021-04-27 10:00:00', '2021-04-27 10:00:00', '3', '1');
+INSERT INTO `prueba`.`t_pedidoplato` (`pedidoplato_cant`, `createdAt`, `updatedAt`, `plato_id`, `pedido_id`) VALUES ('1', '2021-04-27 10:00:00', '2021-04-27 10:00:00', '2', '2');
+INSERT INTO `prueba`.`t_pedidoplato` (`pedidoplato_cant`, `createdAt`, `updatedAt`, `plato_id`, `pedido_id`) VALUES ('2', '2021-04-27 10:00:00', '2021-04-27 10:00:00', '4', '3');
